@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <p class="label">PENDAFTARAN PESERTA</p>
+        <h1>Formulir Pendaftaran</h1>
+        <p class="subtitle">Lengkapi data diri untuk melakukan pendaftaran.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Data Pendaftar</h2>
+            <p class="description">Isi formulir berikut dengan data yang sesuai.</p>
+
+            <form action="detail.html" method="GET">
+                <div class="form-group">
+                    <label for="nama">Nama lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nim">NIM</label>
+                        <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kelas">Kelas</label>
+                        <select id="kelas" name="kelas" required>
+                            <option value="">Pilih kelas</option>
+                            <option value="RA">RA</option>
+                            <option value="RB">RB</option>
+                            <option value="RC">RC</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="prodi">Program studi</label>
+                    <input type="text" id="prodi" name="prodi" value="Teknik Informatika" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alasan">Alasan mendaftar</label>
+                    <textarea id="alasan" name="alasan" rows="3" placeholder="Tuliskan alasan mendaftar"></textarea>
+                </div>
+
+                <button type="submit">Lihat Detail Pendaftaran <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="note">Data dikirim menggunakan metode GET melalui URL.</p>
+        </section>
+
+        <footer>Pengembangan Aplikasi Web · Tugas Individu 3</footer>
+    </main>
+</body>
+</html>
